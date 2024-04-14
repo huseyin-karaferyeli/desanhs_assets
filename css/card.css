@@ -1,0 +1,116 @@
+body{
+    background-color:#1d1f20; /* background color for demo only */
+}
+body, html{ /* for demo only */
+    height:100%;
+    width:100%;
+    padding:0;
+    margin:0;
+    background-color: #729D39;
+}
+#container{ /* center for demo only */
+    max-width:300px;
+    width:100%;
+    overflow:hidden;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-right:-50%;
+    transform:translate(-50%, -50%);
+    animation: animate 1s ease-out;
+}
+
+@keyframes animate {
+    from{
+        top: 60%;
+    }
+    to{
+        top: 50%;
+    }
+}
+
+.bc-wrapper{
+    position:relative;
+}
+.bc-size{
+    width:300px;
+    height:600px;
+}
+.bc-style{
+    background-image:none;
+    text-align:center;
+    overflow:hidden; /* avoid elements to spill outside of the VC edge */
+}
+.bc-content{
+    position:absolute;
+    background-color:transparent;
+}
+.text, button{
+    font-family:'Ubuntu', sans-serif;
+}
+.name-txt{
+    position:absolute;
+    width:280px;
+    left:10px;
+    top:285px;
+    color:#fff;
+    font-size:1.7em;
+    font-weight:600;
+    letter-spacing:-0.010em;
+}
+.qualification-txt{
+    position:relative;
+    display: grid;
+    width:280px;
+    left:10px;
+    top:385px;
+    color: #fff;
+    font-size:1.45em;
+    font-weight:400;
+    letter-spacing:-0.050em;
+    margin-bottom: 20px;
+}
+.image-wrapper{
+    position:absolute;
+    left:10px;
+    top:26px;
+    width:280px;
+    height:240px; /* To clip bottom of the image */
+    overflow:hidden;
+}
+img{
+    position:absolute;
+    top:0;
+    left:0;
+    width:280px;
+    height:280px;
+    border-radius:50%;
+}
+button{
+    position:absolute;
+    left:30px;
+    top:540px;
+    width:240px;
+    height:50px;
+    display:block;
+    padding:10px 10px 10px 10px;
+    background-color:#36622B;
+    border:none;
+    border-radius:50px;
+    cursor:pointer;
+    outline:0;
+}
+.button-txt{
+    font-size:1.5em;
+    font-weight:600;
+    color: #fff;
+    letter-spacing: 0.25em;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    border: 2px solid #fff;
+    border-radius: 15px;
+}
