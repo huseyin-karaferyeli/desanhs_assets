@@ -894,8 +894,7 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(#36622B, #36622B), url("../img/cta-bg.jpg") fixed center center;
-  background-size: cover;
+  background: linear-gradient(#36622B, #36622B);
   padding: 120px 0;
 }
 
